@@ -43,18 +43,18 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>你只需要想个标题</h1>
+            <h1>人工智教你说古文</h1>
           </div>
           <div className="header-subtitle">
-            <h2>剩下的工作由人工智能来完成</h2>
+            <h2>快速让比别人觉得你十分有文化</h2>
           </div>
           <div className="prompt-container">
-            <textarea placeholder="//告诉我你的文章是什么标题(示例：土豆和鸡蛋的故事）" className="prompt-box" 
+            <textarea placeholder="//这里输入原文(示例：老婆我错了。）" className="prompt-box" 
               value={userInput} onChange={onUserChangedText} />
             <div className="prompt-buttons">
               <a className="generate-button" onClick={callGenerateEndpoint}>
               <div className="generate">
-        <p>干</p>
+        <p>整</p>
       </div>
     </a>
   </div>
@@ -62,7 +62,7 @@ const callGenerateEndpoint = async () => {
   <div className="output">
     <div className="output-header-container">
       <div className="output-header">
-        <h3>Output</h3>
+        <h3>结果：</h3>
       </div>
     </div>
     <div className="output-content">

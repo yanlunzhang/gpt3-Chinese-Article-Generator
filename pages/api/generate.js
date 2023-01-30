@@ -8,9 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 
 const basePromptPrefix = 
-`请用如下标题完成一篇有深度的好文章
-标题:
-`;
+`请将下列文字翻译成古文:`;
 const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
